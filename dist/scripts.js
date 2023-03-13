@@ -1,0 +1,1 @@
+$(document).ready(function(){let t=$("#item-list");$("form").submit(function(e){e.preventDefault();let n=$("input").val();""!==n&&(t.append('<li><span class="item">'+n+'</span><button class="delete">X</button></li>'),$("input").val(""))}),t.on("click",".item",function(){$(this).toggleClass("strike")}),t.on("click",".delete",function(){$(this).parent().remove()}),t.sortable()});
